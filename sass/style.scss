@@ -1,0 +1,323 @@
+@use '../sass/colors' as *;
+@use '../sass/animate' as *;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-padding-top: 82px;
+}
+body {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	background-color: $bg-color;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $color-main;
+}
+.underline2 {
+	margin: 0 auto;
+	margin-bottom: 5px;
+	width: 90%;
+	height: 2px;
+	background-color: $color-gray;
+}
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.407);
+}
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.3s linear;
+	.navbar-brand {
+		font-weight: bold;
+	}
+	.fa-bars {
+		padding: 10px;
+	}
+	.nav-link,
+	.navbar-brand,
+	.navbar-toggler {
+		color: $color-main;
+	}
+	.nav-link:hover,
+	.active,
+	.navbar-brand:hover,
+	.navbar-toggler:hover {
+		color: $color-seccond !important;
+	}
+	z-index: 10;
+}
+header {
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/gaming-2215601_640.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		.hero-bg {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.455);
+		}
+		.hero-txt {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			color: white;
+			flex-direction: column;
+			justify-content: center;
+			bottom: 0;
+			font-size: 20px;
+			text-align: center;
+			.big-txt {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 25px;
+			}
+			span {
+				color: palevioletred;
+			}
+		}
+		.btn {
+			width: 200px;
+			text-transform: uppercase;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		i {
+			position: absolute;
+			bottom: 10px;
+			font-size: 30px;
+			width: 100%;
+			text-align: center;
+			color: white;
+		}
+	}
+}
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+	.aboutus-hover:hover {
+		color: $color-main;
+	}
+}
+
+.hero-aboutus {
+	position: relative;
+	width: 100%;
+	background-image: url('../img/technology-2818664_640.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	.aboutus {
+		position: relative;
+		color: white;
+	}
+	.hero-bg-aboutus {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(98, 15, 64, 0.455);
+	}
+	.aboutus-hero-item {
+		margin: 10px 0;
+		i {
+			font-size: 36px;
+		}
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+.carousel {
+	display: none;
+}
+.prices {
+	text-align: center;
+	.price-box {
+		margin: 10px 20px;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: 3px 3px 3px;
+		transition: scale 0.3s;
+		h4 {
+			color: $color-main;
+			text-transform: uppercase;
+		}
+		span {
+			font-weight: bold;
+		}
+		i {
+			margin-left: 10px;
+		}
+		.price-tag {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.btn {
+			text-transform: uppercase;
+		}
+	}
+	.price-box:hover {
+		scale: 1.05;
+	}
+	.price-info {
+		a {
+			text-decoration: none;
+		}
+	}
+	.text-muted {
+		font-size: 12px;
+	}
+}
+.team {
+	position: relative;
+	width: 100%;
+	background-image: url('../img/team/chairs-1840377_1920.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	.team-bg {
+		position: absolute;
+		top: 0;
+		background-color: rgba(51, 51, 51, 0.508);
+		height: 100%;
+		width: 100%;
+	}
+	h2 {
+		position: relative;
+		color: $bg-color;
+	}
+	.card {
+		transition: scale 0.3s;
+		.card-img-top {
+			height: 300px;
+			object-fit: cover;
+		}
+		i {
+			padding: 10px;
+		}
+		.card-body {
+			height: 160px;
+		}
+	}
+	.card:hover {
+		scale: 0.95;
+	}
+	.card-title {
+		margin-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.achievements {
+	i {
+		font-size: 40px;
+		text-shadow: black 0 0 5px;
+		color: white;
+	}
+	.achievements-txt {
+		text-transform: uppercase;
+	}
+}
+.contact {
+	position: relative;
+	width: 100%;
+	background-image: url('../img/skyline-1869214_640.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	.contact-shadow {
+		position: absolute;
+		background-color: rgba(1, 1, 1, 0.705);
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+	.contact-txt {
+		position: relative;
+		text-shadow: 0 0 5px black;
+		.underline {
+			background-color: white;
+		}
+		h3 {
+			text-transform: uppercase;
+		}
+		i {
+			color: white;
+			font-size: 26px;
+			padding: 0 10px;
+		}
+	}
+}
+// @media (min-width:576px){
+// 	.hero-aboutus {
+// 		// height: 450px;
+// 	}
+// }
+// @media (min-width: 768px) {
+
+// }
+@media (min-width: 992px) {
+	nav {
+		height: 82px;
+	}
+	html {
+		scroll-padding-top: 72px;
+	}
+	.hero-aboutus {
+		background-image: url('../img/technology-2818664_1280.jpg');
+	}
+	.carousel {
+		display: block;
+		width: 60%;
+		margin: auto;
+		.carousel-caption {
+			background-color: rgba(0, 0, 0, 0.627);
+			width: 100%;
+			left: 0;
+		}
+	}
+	.contact {
+		background-image: url('../img/skyline-1869214_1920.jpg');
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		.hero-img {
+			background-image: url('../img/gaming-2215601_1920.jpg');
+		}
+		.hero-txt {
+			font-size: 30px;
+		}
+	}
+}
